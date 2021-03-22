@@ -87,3 +87,21 @@ askUserName(sayHello);
 
 + `lastIndexOf(item)` will return the **last index** where a specific **item** was seen 
 + `IndexOf(item)` will return the **first index** where a specific **item** was seen
+
+### map
+`map` is a method that you can use on arrays to create a new array and execute a block of code on every element in the returning array.
+
+```javascript
+const numbers = [1, 2, 5, 7];
+
+const doubles = numbers.map(function(num){
+
+  return num * 2;
+
+});
+
+
+console.log(doubles);
+
+// [2, 4, 10, 14]
+```
