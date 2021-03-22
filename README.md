@@ -117,3 +117,41 @@ const myArray = [11, 34, 54, 32, 54];
 console.log(myArray.every(element => element > 10));
 // true 
 ```
+
+### filter
+The `filter` method will create a new array with only the element that passes the condition of the given function.
+
+```javascript
+const myArray = [3, 2, 40, 15, 20];
+const greaterThanFive = myArray.filter(number => number > 5);
+console.log(greaterThanFive);
+// [40, 15, 20]
+```
+
+### reduce
+The `reduce` method will reduce the array to a single value.
+
+```javascript
+const myArray = [13, 200, 404, 430, 10];
+console.log(myArray.reduce((acc, currentValue) => acc + currentValue));
+// 1057
+```
+
+###Array destructuring
+
+Array destructuring automatically creates variables that correspond to one or multiples items of an array.
+
+```javascript
+const animals = ["Hubert", "Rosemary", "Paul"];
+const [hamster, kiwi, guineaFowl] = animals;
+
+console.log(hamster);
+// "Hubert"
+console.log(kiwi);
+// "Rosemary"
+console.log(guineaFowl);
+// "Paul"
+```
+
+### to sum up
+![alt text](https://storage.googleapis.com/quest_editor_uploads/Jfb7pFRSdBBCkms0sZuykoKffThSpu0a.png)
