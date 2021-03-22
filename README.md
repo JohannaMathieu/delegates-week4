@@ -53,26 +53,16 @@ function askUserName(callback){
 askUserName(sayWelcome);
 askUserName(sayHello);
 ```
-Loops & nested loops
 
-NESTED
+---
 
-for(let i = 0; i < .length; i++){
-for(let j = 0; j < [i].length; j++){
-console.log( [i][j])
-}
-}
+## arrays advanced
 
-MAP
++ `unshift("elementA")` adds an elementA at the beginning of an array
++ `shift()` removes the **first element** of an array
++ `join()` will transform the array to a string. You can specify a character to seperate the array-elements -> `join(",")`
 
-Map requires a new variable, it will create a new array using a previous one - call the 1st variable then add ".map" - from there you can call an arrow function ( => );
+### finding elements in an array
 
-ForEach
-
-Is used to work on every element in the array, it will not generate a new array as of "map".
-
-To make it work use ".forEach (() => () );"
-
-Filter
-
-Fill create a new array if the condition passes
++ `lastIndexOf(item)` will return the **last index** where a specific **item** was seen 
++ `IndexOf(item)` will return the **first index** where a specific **item** was seen
