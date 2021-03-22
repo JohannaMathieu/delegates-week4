@@ -105,3 +105,15 @@ console.log(doubles);
 
 // [2, 4, 10, 14]
 ```
+### forEach
+
+`map` will generate a new array. `forEach` is just doing an action for every array element.
+
+### every
+The `every` method checks if all the arrays element matches with a condition. The result of every is a boolean.
+
+```javascript
+const myArray = [11, 34, 54, 32, 54];
+console.log(myArray.every(element => element > 10));
+// true 
+```
