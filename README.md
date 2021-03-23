@@ -137,7 +137,7 @@ console.log(myArray.reduce((acc, currentValue) => acc + currentValue));
 // 1057
 ```
 
-###Array destructuring
+### Array destructuring
 
 Array destructuring automatically creates variables that correspond to one or multiples items of an array.
 
@@ -155,3 +155,8 @@ console.log(guineaFowl);
 
 ### to sum up
 ![alt text](https://storage.googleapis.com/quest_editor_uploads/Jfb7pFRSdBBCkms0sZuykoKffThSpu0a.png)
+
+
+
+## Dojo: Palindrome algorythm
+(https://codesandbox.io/s/palindrome-algorithm-begin-forked-y7yep?file=/src/palindrome.js)
