@@ -143,3 +143,76 @@ Will export the array into a string + ou can add the separator in () for example
 
 + `lastIndexOf(item)` will return the **last index** where a specific **item** was seen 
 + `IndexOf(item)` will return the **first index** where a specific **item** was seen
+
+### map
+`map` is a method that you can use on arrays to create a new array and execute a block of code on every element in the returning array.
+
+```javascript
+const numbers = [1, 2, 5, 7];
+
+const doubles = numbers.map(function(num){
+
+  return num * 2;
+
+});
+
+
+console.log(doubles);
+
+// [2, 4, 10, 14]
+```
+### forEach
+
+`map` will generate a new array. `forEach` is just doing an action for every array element.
+
+### every
+The `every` method checks if all the arrays element matches with a condition. The result of every is a boolean.
+
+```javascript
+const myArray = [11, 34, 54, 32, 54];
+console.log(myArray.every(element => element > 10));
+// true 
+```
+
+### filter
+The `filter` method will create a new array with only the element that passes the condition of the given function.
+
+```javascript
+const myArray = [3, 2, 40, 15, 20];
+const greaterThanFive = myArray.filter(number => number > 5);
+console.log(greaterThanFive);
+// [40, 15, 20]
+```
+
+### reduce
+The `reduce` method will reduce the array to a single value.
+
+```javascript
+const myArray = [13, 200, 404, 430, 10];
+console.log(myArray.reduce((acc, currentValue) => acc + currentValue));
+// 1057
+```
+
+### Array destructuring
+
+Array destructuring automatically creates variables that correspond to one or multiples items of an array.
+
+```javascript
+const animals = ["Hubert", "Rosemary", "Paul"];
+const [hamster, kiwi, guineaFowl] = animals;
+
+console.log(hamster);
+// "Hubert"
+console.log(kiwi);
+// "Rosemary"
+console.log(guineaFowl);
+// "Paul"
+```
+
+### to sum up
+![alt text](https://storage.googleapis.com/quest_editor_uploads/Jfb7pFRSdBBCkms0sZuykoKffThSpu0a.png)
+
+
+
+## Dojo: Palindrome algorythm
+(https://codesandbox.io/s/palindrome-algorithm-begin-forked-y7yep?file=/src/palindrome.js)
