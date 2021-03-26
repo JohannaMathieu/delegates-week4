@@ -63,16 +63,49 @@ console.log( [i][j])
 }
 }
 
-MAP
 
-Map requires a new variable, it will create a new array using a previous one - call the 1st variable then add ".map" - from there you can call an arrow function ( => );
 
-ForEach
+# ARRAYS
+## .map
 
-Is used to work on every element in the array, it will not generate a new array as of "map".
+### Map requires a new variable, it will create a new array using a previous one - call the 1st variable then add ".map" - from there you can call an arrow function ( => );
+
+## .ForEach
+
+### Is used to work on every element in the array, it will not generate a new array as of "map".
 
 To make it work use ".forEach (() => () );"
+to recreate it : 
 
-Filter
+
+## function foreach (array,callback) {
+
+  for (let i = 0; i < array.length; i++) {
+     callback(array[i])
+  }
+  }
+
+  foreach( ___ , console.log)
+
+
+## .Every 
+to check if all items pass a given test - if even one is false, the return will be false
+
+## .Filter
 
 Fill create a new array if the condition passes
+
+## .reduce
+Can be used to find the total of a sumn.
+
+## .shift
+Will remove the first element of an array
+
+## .join
+Will export the array into a string + ou can add the separator in () for example (+) will show "element1 + element2 ".
+
+
+# Filtering arrays
+
+### To find the scripts in the data set that are still in use, the following function might be helpful. It filters out the elements in an array that don’t pass a test.
+--------------
