@@ -3,6 +3,27 @@
 ### delegates this week: Gege and Hanna
 
 ---
+Loops & nested loops
+
+NESTED
+
+for(let i = 0; i < .length; i++){ for(let j = 0; j < [i].length; j++){ console.log( [i][j]) } }
+
+MAP
+
+Map requires a new variable, it will create a new array using a previous one - call the 1st variable then add ".map" - from there you can call an arrow function ( => );
+
+ForEach
+
+Is used to work on every element in the array, it will not generate a new array as of "map".
+
+To make it work use ".forEach (() => () );"
+
+Filter
+
+Fill create a new array if the condition passes
+
+---
 
 ## advanced functions
 
@@ -109,3 +130,16 @@ Will export the array into a string + ou can add the separator in () for example
 
 ### To find the scripts in the data set that are still in use, the following function might be helpful. It filters out the elements in an array that don’t pass a test.
 --------------
+
+---
+
+## arrays advanced
+
++ `unshift("elementA")` adds an elementA at the beginning of an array
++ `shift()` removes the **first element** of an array
++ `join()` will transform the array to a string. You can specify a character to seperate the array-elements -> `join(",")`
+
+### finding elements in an array
+
++ `lastIndexOf(item)` will return the **last index** where a specific **item** was seen 
++ `IndexOf(item)` will return the **first index** where a specific **item** was seen
